@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="whatspic.jpg">
+  <title>Contact Form</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+  <section class="contact" id="contact">
+    <h2 class="heading">ContaCt <span>Me</span></h2>
+
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms Configuration -->
+      <input type="hidden" name="access_key" value="112a6a54-60c7-4d31-96cb-18b19ea9b1b7">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Form Fields -->
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="subject" placeholder="Email Subject">
+      </div>
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+      <!-- Anti-spam -->
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+      <!-- Submit Button -->
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+
+    <!-- Go Back Button -->
+    <div class="bttn-t">
+      <button onclick="goback()" class="btn-button">Go BaCk</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/mohd-subhan-66b914280"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/Mdsubhan79"><i class='bx bxl-github'></i></a>
+      <a href="https://www.instagram.com/subhan_mlk_79"><i class='bx bxl-instagram'></i></a>
+      <a href="https://wa.me/message/TTBE7MI2RQ2TA1"><i class='bx bxl-whatsapp'></i></a>
+    </div>
+    <div class="social2">
+      <a href="Home.html">Home</a>
+      <a href="About.html">About Me</a>
+      <a href="Services.html">My Services</a>
+      <a href="Contact.html">Contact me</a>
+    </div>
+    <p class="copyright">
+      &copy;Mohd Subhan - All Right Reserved
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function goback() {
+      window.history.back();
+    }
+  </script>
+  <script src="Myport.js"></script>
+</body>
+
+</html>
