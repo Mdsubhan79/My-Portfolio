@@ -679,3 +679,12 @@ section{
         font-size: 10px;
     }
 }
+
+footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      color: #315000;
+      margin-top: 30px;
+      font-size: 2em;
+    }

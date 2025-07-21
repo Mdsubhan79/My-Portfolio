@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Achievements - Mohd Subhan</title>
+  <style>
+    :root {
+      --bg-color: #fff;
+      --snd-bg-color: #90ad95;
+      --text-color: #000;
+      --main-color: #85a104;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: var(--text-color);
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 30px 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 1.5rem;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .cert-card {
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-left: 4px solid var(--main-color);
+    }
+
+    .cert-card h3 {
+      margin-top: 0;
+      font-size: 1rem;
+      color: #2c3e50;
+    }
+
+    .cert-card p {
+      margin: 6px 0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .cert-card a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .cert-card a:hover {
+      text-decoration: underline;
+    }
+
+    .bttn-t {
+      padding: 15px;
+    }
+
+    .btn-button {
+      cursor: pointer;
+      padding: 0.4rem 1rem;
+      background: var(--main-color);
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      color: var(--text-color);
+      transition: 0.3s ease;
+      font-weight: 400;
+      border: none;
+    }
+
+    .btn-button:hover {
+      box-shadow: 0 0 1.2rem rgba(63, 5, 5, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      color: var(--text-color);
+      font-size: 0.9rem;
+    }
+
+    /* 🔍 Responsive adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .cert-card h3 {
+        font-size: 0.95rem;
+      }
+
+      .cert-card p,
+      .cert-card a {
+        font-size: 0.85rem;
+      }
+
+      .btn-button {
+        font-size: 1rem;
+        padding: 0.3rem 0.8rem;
+      }
+    }
+
+    /* Very small screens (below 270px) */
+    @media (max-width: 270px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Achievements</h1>
+    <p>Certifications and Milestones</p>
+  </header>
+
+  <main>
+    <h2>🎓 Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>Full-Stack Web Development</h3>
+        <p>freeCodeCamp</p>
+        <p>March 2025</p>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="cert-card">
+        <h3>Java Programming</h3>
+        <p>Coursera (Duke University)</p>
+        <p>February 2025</p>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="cert-card">
+        <h3>Python for Everybody</h3>
+        <p>Coursera (University of Michigan)</p>
+        <p>January 2025</p>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="cert-card">
+        <h3>Responsive Web Design</h3>
+        <p>freeCodeCamp</p>
+        <p>December 2024</p>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="cert-card">
+        <h3>Automation with n8n</h3>
+        <p>Udemy</p>
+        <p>April 2025</p>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </main>
+
+  <div class="bttn-t">
+    <button onclick="goback()" class="btn-button">Go Back</button>
+  </div>
+
+  <footer>
+    © 2025 Mohd Subhan — All rights reserved
+  </footer>
+
+  <script>
+    function goback() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
