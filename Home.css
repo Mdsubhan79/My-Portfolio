@@ -228,6 +228,22 @@ section{
     color: var(--bg-color);
     box-shadow: 0 0 25px var(--main-color);
 }
+#btttn{
+    display: inline-flex;
+    padding: .5rem 1.5rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    font-weight: 600
+}
+
+.btn:hover{
+    box-shadow:  0 0 1.6rem black;
+}
 
 .btn{
     display: inline-flex;
